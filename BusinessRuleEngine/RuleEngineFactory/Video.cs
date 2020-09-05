@@ -5,6 +5,8 @@ using System.Text;
 
 namespace BusinessRuleEngine.RuleEngineFactory
 {
+    // If the Payment is for Video named as "Learning to Ski", add a free "First Aid" video to the packing slip and for rest 
+    // viedos show the General Packing slip message.
     public class Video : PhysicalProduct, IRuleEngine
     {
         public string VideoName { get; set; }
@@ -27,6 +29,10 @@ namespace BusinessRuleEngine.RuleEngineFactory
             return str.ToString();
         }
 
+        /// <summary>
+        /// This method is used to check special video name.
+        /// </summary>
+        /// <returns></returns>
         private bool IsAdditionalVideoNeeded()
         {
             List<string> VideoNameConditions = new List<string>() { RuleEngineMessages.VideoNameLearningToSki };

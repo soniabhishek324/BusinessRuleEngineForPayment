@@ -5,6 +5,8 @@ using System.Text;
 
 namespace BusinessRuleEngine.RuleEngineFactory
 {
+    // If the Payment is for Physical Product , Generate a packing slip for shipping.
+    // If the Payment is for physical product or book, generate a commission payment to agent.
     public class PhysicalProduct : IRuleEngine
     {
         private CommonHelper _helper { get; set; } = new CommonHelper();

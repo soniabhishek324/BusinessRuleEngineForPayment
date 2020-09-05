@@ -1,5 +1,8 @@
 ﻿namespace BusinessRuleEngine.RuleEngineFactory.Constants
 {
+    /// <summary>
+    /// Constant Messages Class.
+    /// </summary>
     public static class RuleEngineMessages
     {
         public const string GeneratePackingSlip = "Here is your packing slip for shipping";

@@ -2,6 +2,9 @@
 
 namespace BusinessRuleEngine.RuleEngineFactory.Services
 {
+    /// <summary>
+    /// This is service which is used to call the specific Rule type based on object creation.
+    /// </summary>
     public class RuleEngineService
     {
         

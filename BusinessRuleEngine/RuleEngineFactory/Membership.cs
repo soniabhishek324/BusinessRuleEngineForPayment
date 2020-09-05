@@ -5,6 +5,8 @@ using System.Text;
 
 namespace BusinessRuleEngine.RuleEngineFactory
 {
+    // If the Payment is for Membership, Activate that membership.
+    // If the payment is for Membership or upgrade membership, email the owner and inform them of the activation/upgrade.
     public class Membership : IRuleEngine
     {
         private CommonHelper _helper { get; set; } = new CommonHelper();

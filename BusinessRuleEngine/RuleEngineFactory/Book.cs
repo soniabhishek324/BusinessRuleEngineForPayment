@@ -5,6 +5,8 @@ using System.Text;
 
 namespace BusinessRuleEngine.RuleEngineFactory
 {
+    // If the Payment is for Book, Create a duplicate packing slip for royalty department.
+    // If the Payment is for physical product or book, generate a commission payment to agent.
     public class Book : IRuleEngine
     {
         private CommonHelper _helper { get; set; } = new CommonHelper();
