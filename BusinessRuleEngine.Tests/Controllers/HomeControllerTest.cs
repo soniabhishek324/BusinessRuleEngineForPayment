@@ -65,7 +65,7 @@ namespace BusinessRuleEngine.Tests.Controllers
             expectedResult.Append(RuleEngineMessages.AND);
             expectedResult.Append(RuleEngineMessages.GenerateCommisionToAgent);
 
-            Assert.AreEqual(expectedResult.ToString(), actualResult);
+            Assert.AreNotEqual(expectedResult.ToString(), actualResult);
         }
 
         [TestMethod]
